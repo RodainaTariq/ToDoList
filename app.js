@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const methodOverride = require('method-override');
-const router = require('./routes/tasks');
+const router = require('./src/routes/tasks');
 
 app.use(methodOverride('_method' , {method: ['POST' , 'GET']}));
 app.set("view engine", "ejs"); // search about views folder to run code HTML
